@@ -1,0 +1,227 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.site-header {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333333;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+/* Opacity and size transformation on hover for header navigation links */
+.nav-link {
+  text-decoration: none;
+  color: #333333;
+  margin-right: 10px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Resume Body >>>>>>>>>>>>>>>>>> */
+
+.gmail-contact {
+  position: relative;
+  display: inline-block; /* Added */
+}
+
+.gmail-contact:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+}
+
+.gmail-contact:hover::after {
+  content: ""; /* Added */
+  position: absolute;
+  bottom: -2px; /* Adjust as needed */
+  left: 0; 
+  width: 100%;
+  height: 2px;
+  transform: scaleX(1.1);
+  transition: ease-in-out 0.3s;
+}
+
+.resume-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resume-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.resume-contact {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.resume-location {
+  font-size: 14px;
+  color: #777777;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.resume-objective,
+.resume-summary,
+.resume-education,
+.resume-job-title {
+  margin-bottom: 20px;
+}
+
+.resume-skills,
+.resume-education-list,
+.resume-projects {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.resume-experience {
+  margin-bottom: 20px;
+}
+
+.resume-job-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.resume-education-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.resume-education,
+.resume-education-list {
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.resume-projects li {
+  margin-bottom: 10px;
+}
+
+.resume-section {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Footer styles >>>>>>>>>>>>>>>>> */
+footer {
+  background-color: #999;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-media-icon {
+  width: 30px;
+  height: 30px;
+  filter: contrast(6);
+}
+
+/* Opacity and size transformation on hover for social media icons */
+.social-media-icon:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
