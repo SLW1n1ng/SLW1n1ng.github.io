@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 1</title>
-    <link rel="stylesheet" href="./styles/index.css" /> 
+    <title>Airline Reservation</title>
+    <link rel="stylesheet" href="./styles/index.css" />
     <script src="./script/index.js" defer></script>
   </head>
 
@@ -20,13 +20,79 @@
     </header>
 
     <main>
-      <h1>Project 1</h1>
+      <!-- Project description ---------------------------------------- -->
+      <h1>Airline Project</h1>
+      <a href="https://github.com/SLW1n1ng/AirlinePictureBox.git">View Project Code on GitHub</a>
+      <h2>Passenger Booking</h2>
       <p>
-        This is the content of Project 1. ipsum Lorem, ipsum dolor sit amet
-        consectetur adipisicing elit. Nemo sit commodi esse, eum sint temporibus
-        totam quam sapiente cumque aspernatur amet adipisci placeat quibusdam
-        earum dolorum ratione error accusantium optio?
+        The Passenger Booking section allows users to book seats in the airline.
+        There are two classes available: Business Class and Economy Class. Users
+        can click on the respective buttons to select the class they want.
       </p>
+
+      <h3>Business Class</h3>
+      <p>
+        When the user clicks on the Business Class button, a form is displayed
+        showing the available seats in the Business Class. The seats are
+        represented as picture boxes, and empty seats are displayed with an
+        empty seat image. Users can click on an empty seat to select it.
+      </p>
+      <p>
+        If the user hasn't entered their first name and last name in the text
+        boxes provided, an error message is displayed. Once the user enters
+        their name and selects an empty seat, the seat image changes to a full
+        seating image, indicating that the seat has been booked. The user's name
+        is displayed below the seat.
+      </p>
+
+      <h3>Economy Class</h3>
+      <p>
+        Similar to the Business Class, the Economy Class section allows users to
+        select seats in the Economy Class. The process is the same as the
+        Business Class section.
+      </p>
+
+      <h2>Database Connection</h2>
+      <p>
+        The project connects to a local database to store and retrieve seat
+        booking information. The connection string is provided in the code, and
+        the database file is specified.
+      </p>
+
+      <h2>Additional Features</h2>
+      <p>The project includes additional features such as:</p>
+      <ul>
+        <li>
+          Canceling a seat: If a user wants to cancel a booked seat, they can
+          click on the seat image. A confirmation message is displayed, and if
+          the user confirms, the seat is cleared and made available for booking
+          again.
+        </li>
+        <li>
+          Airline Menu: The Airline Menu button allows users to go back to the
+          main menu of the airline project.
+        </li>
+      </ul>
+      <h1>Welcome to Our Airline!</h1>
+      <h2>Choose Your Seat</h2>
+      
+      <section>
+        <h3>Economy Seat Menu</h3>
+        <img src="../../images/airline/economyseats.png" alt="Economy Seat Menu">
+      </section>
+      
+      <section>
+        <h3>Business Seat Menu</h3>
+        <img src="../../images/airline/businessseats.png" alt="Business Seat Menu">
+      </section>
+      
+      <section>
+        <h3>Main Business or Economy Menu</h3>
+        <img src="../../images/airline/mainmenu.png" alt="Main Business or Economy Menu">
+      </section>
+      <!-- Images section ---------------------------------------------------- -->
+
+
     </main>
 
     <footer>
